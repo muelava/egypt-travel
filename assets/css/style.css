@@ -66,8 +66,6 @@ form>input.cari{
 	75% {background-image: url('../img/hero4.jpg');}
 	100% {background-image: url('../img/hero1.jpg');}
 }
-.jumbotron>.container{
-}
 
 /*subheading*/
 /*.container>.subheading{
@@ -103,6 +101,13 @@ form>input.cari{
 	.jumbotron{
 		padding-top:250px;
 		height: 700px;
+	}
+	.jumbotron>.container>h1{
+		display: inline;
+		font-size: 26px;
+	}
+	.jumbotron>.container>p{
+		font-size: 14px;
 	}
 	.container>#title{
 		margin-top:50px;
