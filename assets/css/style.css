@@ -135,12 +135,13 @@ form>input.cari:hover{
 	form>input.cari:hover{
 		background: #86BBD8;
 	}
-	form>input#form-1,form>input#form-2,form>input#form-3{
-		width:100%;
+	form>input#input-1,form>input#input-2,form>input#input-3{
+		width:86%;
+		height: 16px;
 		margin:5px 0;
 	}
 	form>input.cari{
-		margin:5px 0;
+		margin:20px 0;
 	}
 
 }
