@@ -62,9 +62,6 @@ form>input.cari:hover{
 .kotak-search>form>input:focus{
 	outline: none;
 }
-#subheading{
-	margin-top: 30px;
-}
 
 @keyframes mymove{
 	0% {background-image: url('../img/hero1.jpg');}
@@ -88,6 +85,7 @@ form>input.cari:hover{
 	margin: auto;
 }*/
 
+ /* /jumbotron */
 
 
 
@@ -101,7 +99,7 @@ form>input.cari:hover{
 
 
 
-	/* /jumbotron */
+
 
 	/*versi mobile  */
 @media (max-width:999px){
@@ -111,10 +109,10 @@ form>input.cari:hover{
 	}
 	.jumbotron>.container>h1{
 		display: inline;
-		font-size: 34px;
+		font-size: 48px;
 	}
 	.jumbotron>.container>p{
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.container>#title{
 		margin-top:50px;
