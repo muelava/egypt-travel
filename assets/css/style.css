@@ -49,8 +49,18 @@ form>ul>li:nth-of-type(2){
 	padding: 5px;
 	background: #336699;
 }
+form>input#input-1{
+		padding: 24px 100px;
+}
+	form>input#input-2{
+		padding: 24px 30px;
+}
+	form>input#input-3{
+		padding: 24px 40px;
+}
 form>input.cari{
 	background:#86BBD8;
+	padding: 24px 48px;
 	transition: .3s;
 }
 form>input.cari:hover{
@@ -98,7 +108,18 @@ form>input.cari:hover{
 
 
 
-
+/*versi notebook*/
+@media (max-width: 1220px){
+	form>input#input-1{
+		padding: 24px 60px;
+	}
+	form>input#input-2{
+		padding: 24px 10px;
+	}
+	form>input#input-3{
+		padding: 24px 20px;
+	}
+}
 
 
 	/*versi mobile  */
@@ -107,6 +128,9 @@ form>input.cari:hover{
 		padding-top:250px;
 		height: 700px;
 	}
+/*	.jumbotron>.container{
+		margin-top: 200px;
+	}*/
 	.jumbotron>.container>h1{
 		display: inline;
 		font-size: 38px;
@@ -142,6 +166,7 @@ form>input.cari:hover{
 	}
 	form>input.cari{
 		margin:15px 0;
+		padding: 16px 48px;
 	}
 
 }
