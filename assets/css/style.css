@@ -109,10 +109,10 @@ form>input.cari:hover{
 	}
 	.jumbotron>.container>h1{
 		display: inline;
-		font-size: 48px;
+		font-size: 38px;
 	}
 	.jumbotron>.container>p{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.container>#title{
 		margin-top:50px;
@@ -141,7 +141,7 @@ form>input.cari:hover{
 		margin:5px 0;
 	}
 	form>input.cari{
-		margin:20px 0;
+		margin:15px 0;
 	}
 
 }
