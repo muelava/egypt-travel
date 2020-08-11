@@ -49,13 +49,25 @@ form>ul>li:nth-of-type(2){
 	padding: 5px;
 	background: #336699;
 }
-form>input#input-1{
+form .input-icon{
+	display: inline-block;
+	position:relative;
+}
+form input+i{
+  position:absolute;
+  left:20px;
+  top:28px;
+  color:#BBBBBB;
+}
+form input:focus+i{color:#0099ff;
+}
+form>div>input#input-1{
 		padding: 24px 100px;
 }
-	form>input#input-2{
+	form>div>input#input-2{
 		padding: 24px 30px;
 }
-	form>input#input-3{
+	form>div>input#input-3{
 		padding: 24px 40px;
 }
 form>input.cari{
@@ -66,10 +78,14 @@ form>input.cari{
 form>input.cari:hover{
 	background: #3584EB;
 }
-.kotak-search>form>input{
+.kotak-search>form>div>input{
 	border-radius: 5px;
+	color: #444;
 }
-.kotak-search>form>input:focus{
+.kotak-search>form>div>input::placeholder{
+	color: #999999;
+}
+.kotak-search>form>div>input:focus{
 	outline: none;
 }
 
@@ -80,25 +96,14 @@ form>input.cari:hover{
 	75% {background-image: url('../img/hero4.jpg');}
 	100% {background-image: url('../img/hero1.jpg');}
 }
-
-/*subheading*/
-/*.container>.subheading{
-	margin-top: 3em;
-	display: flex;
-	background-color: red;
-}
-.subheading>h3,h5{
-	align-self: center;
-	font-weight: bold;
-}
-.subheading>h5{
-	margin: auto;
-}*/
-
  /* /jumbotron */
 
-
-
+/*subheading*/
+.container>#subheading{
+	background:red;
+	border-left: 8px solid #336699;
+	color: #2F4858;
+	}
 
 
 
@@ -110,13 +115,13 @@ form>input.cari:hover{
 
 /*versi notebook*/
 @media (max-width: 1220px){
-	form>input#input-1{
+	form>div>input#input-1{
 		padding: 24px 60px;
 	}
-	form>input#input-2{
+	form>div>input#input-2{
 		padding: 24px 10px;
 	}
-	form>input#input-3{
+	form>div>input#input-3{
 		padding: 24px 20px;
 	}
 }
@@ -144,19 +149,26 @@ form>input.cari:hover{
 	.kotak-search>form{
 		background: transparent;
 	}
-	.kotak-search>form>input{
+	.kotak-search>form>div>input{
 		background: rgb(225,225,225,0.7);
 		border-radius: 20px;
 		box-shadow: 0px 0px 5px #336699;
 	}
+	form .input-icon{
+		display: initial;
+	}
+	form>div>input+i{
+		top: 4px;
+	}
 	form>input.cari{
 		background-color: #3584EB;
 		box-shadow: none;
+		border-radius: 20px;
 	}
 	form>input.cari:hover{
 		background: #86BBD8;
 	}
-	form>input#input-1,form>input#input-2,form>input#input-3{
+	form>div>input#input-1,form>div>input#input-2,form>div>input#input-3{
 		width:86%;
 		padding:12px 0px; 
 		margin:5px 0;
@@ -165,5 +177,5 @@ form>input.cari:hover{
 		margin:15px 0;
 		padding: 16px 48px;
 	}
-
+	/* /jumbotron*/
 }

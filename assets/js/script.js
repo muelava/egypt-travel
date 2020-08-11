@@ -4,7 +4,7 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.cssText = "display:0;transition:ease-in-out 1s";
+        document.getElementById("navbar").style.cssText = "display:0;transition:ease .5s";
     } else {
         document.getElementById("navbar").style.top = "-500px";
     }
