@@ -44,6 +44,13 @@ form>ul>li:nth-of-type(2){
 	height: 600px;
 	animation: mymove 50s infinite;
 }
+@keyframes mymove{
+	0% {background-image: url('../img/hero1.jpg');}
+	25% {background-image: url('../img/hero2.jpg');}
+	50% {background-image: url('../img/hero3.jpg');}
+	75% {background-image: url('../img/hero4.jpg');}
+	100% {background-image: url('../img/hero1.jpg');}
+}
 .kotak-search>form{
 	border-radius: 5px;
 	padding: 5px;
@@ -73,7 +80,7 @@ form>div>input#input-1{
 form>input.cari{
 	background:#86BBD8;
 	padding: 24px 48px;
-	transition: .3s;
+	transition: .2s ease;
 }
 form>input.cari:hover{
 	background: #3584EB;
@@ -89,32 +96,59 @@ form>input.cari:hover{
 	outline: none;
 }
 
-@keyframes mymove{
-	0% {background-image: url('../img/hero1.jpg');}
-	25% {background-image: url('../img/hero2.jpg');}
-	50% {background-image: url('../img/hero3.jpg');}
-	75% {background-image: url('../img/hero4.jpg');}
-	100% {background-image: url('../img/hero1.jpg');}
-}
  /* /jumbotron */
 
-/*subheading*/
+	/*container*/
 .container>#subheading{
-	background:red;
 	border-left: 8px solid #336699;
 	color: #2F4858;
-	}
+}
 
+/* /container*/
+div.col-md>.card>a>.card-body{
+	background: rgb(0,0,0,.5);
+	transition: .5s ease;
+	cursor: pointer;
+}
+div.col-md>.card>a>.card-body:hover{
+	background-color: initial;
+}
 
+.carousel-item>.row>.img-carousel{
+  margin: 0 0.5%;
+  padding: 0;
+}
+.carousel-item>.row>.img-carousel>a{
+  text-align: center;
+  color:#2F4858;
+  margin: 0;
+  text-transform: capitalize;
+}
+.img-carousel img:hover{
+	filter: brightness(50%);
+}
+.img-carousel>a>h5{
+	font-size: 16px;
+}
+.carousel>.carousel-control-prev,.carousel>.carousel-control-next{
+    width: 0%;
+}
+.fa-angle-left,.fa-angle-right{
+  color: #396B9A;
+  margin-top: -20px;
+  background: #fff;
+  padding: 14px 20px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px black;
+}
 
-
-
-
+/*/container*/
 
 
 
 /*versi notebook*/
 @media (max-width: 1220px){
+	/*jumbotron*/
 	form>div>input#input-1{
 		padding: 24px 60px;
 	}
@@ -124,6 +158,8 @@ form>input.cari:hover{
 	form>div>input#input-3{
 		padding: 24px 20px;
 	}
+	/*container*/
+
 }
 
 
@@ -178,4 +214,22 @@ form>input.cari:hover{
 		padding: 16px 48px;
 	}
 	/* /jumbotron*/
+
+	/*container*/
+	.container>#subheading>h3{
+		font-size: 18px;
+	}
+	.container>#subheading>h5{
+		font-size: 12px;
+	}
+
+	/* / container*/
+	.img-carousel>a>h5{
+		font-size: 8px;
+	}
+	.fa-angle-left,.fa-angle-right{
+		padding: 5px 10px;
+		margin-top: -14px;
+	}
+
 }

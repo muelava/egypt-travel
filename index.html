@@ -15,7 +15,7 @@
     <!-- navbar -->
     <section class="headline position-relative">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light py-2 px-4 font-weight-bold" id="menubar">
-            <a class="navbar-brand lg-2 text-uppercase" href="#">
+            <a class="navbar-brand lg-2 text-uppercase" href="../index.html">
                 <h3 class="m-0">Egypt Travel</h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -26,11 +26,14 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-uppercase">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" id="menu" href="#pindah">Booking Hotel <span
+                        <a class="nav-link page-scroll" id="menu" href="#rekomendasi">Booking Hotel <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="menu" href="#">Tour</a>
+                        <a class="nav-link page-scroll" id="menu" href="#">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" id="menu" href="#rekomendasi">Rekomendasi</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 px-3 font-weight-normal">
@@ -80,38 +83,124 @@
 
     <!-- container -->
     <div class="container">
-        <div class="d-flex align-items-center px-2 mt-4 justify-content-between" id="subheading">
+        <!-- destinasi populer -->
+        <div class="d-flex align-items-center px-2 mt-5 justify-content-between" id="subheading">
             <h3 class="text-uppercase m-0 font-weight-bold">Destinasi Populer</h3>
             <h5 class="m-0 font-weight-bold">Lihat Lainnya</h5>
         </div>
 
-        <div class="row mt-3">
+        <div class="row">
             <div class="col-md">
-                <div class="card">
+                <div class="card mt-3">
                     <img src="assets/img/hongkong.jpg" class="card-img-top" alt="Hong kong">
-                    <div class="card-body card-img-overlay d-flex justify-content-center align-items-center">
-                        <h3 class="card-text font-weight-bold text-white">Hong Kong</h3>
-                    </div>
+                    <a href="destinasi-populer/hongkong.html" title="Hong kong - cek lebih lanjut">
+                        <div class="card-body card-img-overlay d-flex justify-content-center align-items-center">
+                            <h3 class="card-text font-weight-bold text-white">Hong Kong</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-md">
-                <div class="card">
+                <div class="card mt-3">
                     <img src="assets/img/singapura.jpg" class="card-img-top" alt="Singapura">
-                    <div class="card-body card-img-overlay d-flex justify-content-center align-items-center">
-                        <h3 class="card-text font-weight-bold text-white">Singapura</h3>
-                    </div>
+                    <a href="destinasi-populer/singapura.html" title="Singapura - Cek lebih lanjut">
+                        <div class="card-body card-img-overlay d-flex justify-content-center align-items-center">
+                            <h3 class="card-text font-weight-bold text-white">Singapura</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-md">
-                <div class="card">
+                <div class="card mt-3">
                     <img src="assets/img/tokyo.jpg" class="card-img-top" alt="Tokyo">
-                    <div class="card-body card-img-overlay d-flex justify-content-center align-items-center">
-                        <h3 class="card-text font-weight-bold text-white">Tokyo</h3>
-                    </div>
+                    <a href="destinasi-populer/tokyo.html" title="Tokyo - Cek lebih lanjut">
+                        <div class="card-body card-img-overlay d-flex justify-content-center align-items-center">
+                            <h3 class="card-text font-weight-bold text-white">Tokyo</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+        <!-- /destinasi populer -->
         
+        <!-- Rekomendasi hotel -->
+        <div class="d-flex align-items-center px-2 mt-5 justify-content-between" id="subheading">
+            <h3 class="text-uppercase m-0 font-weight-bold" id="rekomendasi">Rekomendasi Hotel</h3>
+            <h5 class="m-0 font-weight-bold">Lihat Lainnya</h5>
+        </div>
+
+        <!-- carousel -->
+        <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
+    <div class="carousel-inner">
+      <!-- start of 1 slide -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col img-carousel">
+            <a href="#" ><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">South Pasific Hotel</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">mira moon</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">Royal hotel</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">Marina by sands</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">shangri-la hotel</h5></a>
+          </div>
+        </div>
+      </div>
+      <!-- start of 2 slide  -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">nama aing</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">nama aing</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">nama aing</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">nama aing</h5></a>
+          </div>
+          <div class="col img-carousel">
+            <a href="#"><img class="mw-100 d-block" src="assets/img/hero1.jpg" style="border-radius: 5px;" alt="...">
+            <h5 class="m-0 pt-2">nama aing</h5></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="fa fa-angle-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="fa fa-angle-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- /carousel -->
+
+   <!-- Rekomendasi hotel -->
+   <div></div>
+        <div class="d-flex align-items-center px-2 mt-5 justify-content-between" id="subheading">
+            <h3 class="text-uppercase m-0 font-weight-bold" id="rekomendasi">Rekomendasi Hotel</h3>
+            <h5 class="m-0 font-weight-bold">Lihat Lainnya</h5>
+        </div>
+
     </div>
     <!-- /container -->
 
