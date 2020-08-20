@@ -96,7 +96,7 @@ form>input.cari:hover{
 	outline: none;
 }
 
- /* /jumbotron */
+ /* /JUMBOTRON */
 
 	/*container*/
 .container>#subheading{
@@ -104,7 +104,7 @@ form>input.cari:hover{
 	color: #2F4858;
 }
 
-/* /container*/
+/*destinasi populer*/
 div.col-md>.card>a>.card-body{
 	background: rgb(0,0,0,.5);
 	transition: .5s ease;
@@ -113,7 +113,7 @@ div.col-md>.card>a>.card-body{
 div.col-md>.card>a>.card-body:hover{
 	background-color: initial;
 }
-
+/*carousel*/
 .carousel-item>.row>.img-carousel{
   margin: 0 0.5%;
   padding: 0;
@@ -141,8 +141,21 @@ div.col-md>.card>a>.card-body:hover{
   border-radius: 50%;
   box-shadow: 0px 2px 5px black;
 }
+/*tour domestik*/
+div.tour-domestik>.card>img{
+	border-radius: 10px;
+	cursor: pointer;
+}
+div.tour-domestik>.card>a:hover{
+	text-decoration: none;
+}
+div.tour-domestik>.card>a>.card-body{
+	background: initial;
+	color : #2F4858;
+	cursor: pointer;
+}
 
-/*/container*/
+/*/CONTAINER*/
 
 
 
@@ -229,28 +242,38 @@ div.col-md>.card>a>.card-body:hover{
 		padding: 5px 10px;
 		margin-top: -14px;
 	}
+	.rekomendasi>.row>div:nth-of-type(1){
+		display: none;
+	}
+	div.tour-domestik{
+		padding: .20rem!important;
+	}
+	div.tour-domestik a>div>h4{
+		font-size: 1rem;
+	}
 
 }
 
 /*medium*/
 @media (max-width: 800px){
 	.img-carousel>a>h5{
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
-
 
 /*small*/
 @media (max-width: 600px){
 	.img-carousel>a>h5{
-		font-size: 8px;
+		font-size: 12px;
+	}
+	.rekomendasi>.row>div:nth-of-type(1), .rekomendasi>.row>div:nth-of-type(2){
+		display: none;
 	}
 }
 
-
-/*ex-small*/
-@media (max-width: 444px){
-	.img-carousel>a>h5{
-		font-size: 7px;
+/*ext small*/
+@media (max-width: 400px){
+	div.tour-domestik a>div>h4{
+		font-size: .5rem;
 	}
 }
