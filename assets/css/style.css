@@ -130,10 +130,12 @@ div.col-md>.card>a>.card-body:hover{
 .img-carousel>a>h5{
 	font-size: 18px;
 }
-.carousel>.carousel-control-prev,.carousel>.carousel-control-next{
+.rekomendasi-hotel>.carousel-control-prev,
+.rekomendasi-hotel>.carousel-control-next{
     width: 0%;
 }
-.fa-angle-left,.fa-angle-right{
+.rekomendasi-hotel>.carousel-control-prev>.fa-angle-left,
+.rekomendasi-hotel>.carousel-control-next>.fa-angle-right{
   color: #396B9A;
   margin-top: -20px;
   background: #fff;
@@ -146,14 +148,47 @@ div.tour-domestik>.card>img{
 	border-radius: 10px;
 	cursor: pointer;
 }
-div.tour-domestik>.card>a:hover{
-	text-decoration: none;
-}
 div.tour-domestik>.card>a>.card-body{
 	background: initial;
 	color : #2F4858;
 	cursor: pointer;
 }
+/*tour lainnya*/
+.tour-lainnya>ol.carousel-indicators{
+    top: -50px;
+    z-index: initial;
+ }
+ .tour-lainnya>ol.carousel-indicators>li{
+    background-color: #336699;
+    height: 8px;
+    width: 35px;
+ }
+ol.indikator-tl li{
+  opacity: 0;
+ }
+ div.tour-lainnya>div>div>.row>div>div>a{
+	color: #3E5564;
+}
+div.tour-lainnya>div>div>.row>div>div>a:hover{
+	transition: .5s ease;
+	transform: scale(1.1);
+	z-index: 4;
+	color: rgb(79,123,168);
+}
+ .tour-lainnya>.carousel-control-prev,
+ .tour-lainnya>.carousel-control-next{
+ 	width: 10%;
+ 	transition: .5s ease;
+ }
+.tour-lainnya>.carousel-control-next:hover{
+	background: linear-gradient(to right, rgba(0,0,0,.1),rgba(0,0,0,.8));
+	width: 10%;
+}
+.tour-lainnya>.carousel-control-prev:hover{
+    background: linear-gradient(to left, rgba(0,0,0,.1),rgba(0,0,0,.8));
+	width: 10%;	
+}
+
 
 /*/CONTAINER*/
 
@@ -251,6 +286,11 @@ div.tour-domestik>.card>a>.card-body{
 	div.tour-domestik a>div>h4{
 		font-size: 1rem;
 	}
+	div.tour-lainnya>div>div>.row>div>div>a h4{
+		font-size: 1rem;
+		margin-bottom: .5rem!important;
+		margin-top: .1rem!important;
+	}
 
 }
 
@@ -268,6 +308,12 @@ div.tour-domestik>.card>a>.card-body{
 	}
 	.rekomendasi>.row>div:nth-of-type(1), .rekomendasi>.row>div:nth-of-type(2){
 		display: none;
+	}
+	div.tour-domestik a>div>h4{
+		font-size: .7rem;
+	}
+	div.tour-lainnya>div>div>.row>div>div>a h4{
+		font-size: .7rem;
 	}
 }
 
