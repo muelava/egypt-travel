@@ -144,14 +144,24 @@ div.col-md>.card>a>.card-body:hover{
   box-shadow: 0px 2px 5px black;
 }
 /*tour domestik*/
-div.tour-domestik>.card>img{
+div.tour-domestik>.card img{
 	border-radius: 10px;
 	cursor: pointer;
 }
-div.tour-domestik>.card>a>.card-body{
+div.tour-domestik>.card img:hover{
+	filter:brightness(50%);
+}
+div.tour-domestik>.card img:active{
+	filter: brightness(75%);
+}
+div.tour-domestik>.card>a{
 	background: initial;
 	color : #2F4858;
 	cursor: pointer;
+	transition: .3s ease;
+}
+.row>div.tour-domestik>.card>a:hover{
+	color: rgb(79,123,168);
 }
 /*tour lainnya*/
 .tour-lainnya>ol.carousel-indicators{
@@ -188,9 +198,57 @@ div.tour-lainnya>div>div>.row>div>div>a:hover{
     background: linear-gradient(to left, rgba(0,0,0,.1),rgba(0,0,0,.8));
 	width: 10%;	
 }
-
-
 /*/CONTAINER*/
+
+/*before blog*/
+.before-blog>div>div>div.carousel-item div{
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+	filter: brightness(90%);
+	height: 350px; 
+	width: 100%;
+}
+ /*blog*/
+ .blog>div>div>div>a>div h6{
+ 	font-size: 0.9rem;
+ 	color: #3B5261;
+ }
+ .blog>div>div>div>a>div h6:hover{
+ 	color: rgb(79,123,168);
+ }
+
+ /*FOOTER*/
+ footer>div>div>div>div a{
+ 	color: #8B8B8B;
+ }
+
+/*----------------------------------------------------------------------------POSTINGAN----------------------------------------------------------------------------*/
+
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'header header header header header header'
+	'main main main main right right'
+	'footer footer footer footer footer footer';
+	grid-gap: 10px;
+	background-color: #2196F3;
+	padding: 10px;
+}
+
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+
+/*----------------------------------------------------------------------------/POSTINGAN----------------------------------------------------------------------------*/
 
 
 
@@ -286,12 +344,23 @@ div.tour-lainnya>div>div>.row>div>div>a:hover{
 	div.tour-domestik a>div>h4{
 		font-size: 1rem;
 	}
+	section.sect-2>h3{
+		font-size: 18px;
+		margin-bottom: 2rem!important;
+	}
+	.tour-lainnya>ol.carousel-indicators{
+		top: -35px;
+	}
+	div.tour-lainnya>div>div>div>div.col-4{
+		padding: 0px!important;
+	}
 	div.tour-lainnya>div>div>.row>div>div>a h4{
 		font-size: 1rem;
 		margin-bottom: .5rem!important;
-		margin-top: .1rem!important;
+		margin-top: 0!important;
 	}
-
+	/*/container*/
+	
 }
 
 /*medium*/
@@ -299,6 +368,14 @@ div.tour-lainnya>div>div>.row>div>div>a:hover{
 	.img-carousel>a>h5{
 		font-size: 12px;
 	}
+	/*before blog*/
+	.before-blog>div>div>div.carousel-item div{
+		height: 200px;
+	}
+	/*blog*/
+	.blog>div>div>div>a>div h6{
+ 	font-size: 0.7rem;
+ }
 }
 
 /*small*/
@@ -322,4 +399,8 @@ div.tour-lainnya>div>div>.row>div>div>a:hover{
 	div.tour-domestik a>div>h4{
 		font-size: .5rem;
 	}
+	/*blog*/
+	.blog>div>div>div>a>div h6{
+ 	font-size: 0.5rem;
+ }
 }
