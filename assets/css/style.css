@@ -214,14 +214,23 @@ div.tour-lainnya>div>div>.row>div>div>a:hover{
  	font-size: 0.9rem;
  	color: #3B5261;
  }
- .blog>div>div>div>a>div h6:hover{
+ .blog>div>div>div>a>div h6:hover,.blog>div>div>ul a:hover,footer>div>div>div>div a:hover{
  	color: rgb(79,123,168);
  }
 
+  .blog>div>div>form input{
+ 	font-size: 16px;
+ }
+  .blog>div>div>form> input.btn{
+  	background-color: #336699;
+  	font-size: 14px;
+  }
+
  /*FOOTER*/
- footer>div>div>div>div a{
+ footer>div>div>div>div a,.blog>div>div>ul a{
  	color: #8B8B8B;
  }
+
 
 /*----------------------------------------------------------------------------POSTINGAN----------------------------------------------------------------------------*/
 
