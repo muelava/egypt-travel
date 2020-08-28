@@ -218,16 +218,19 @@ div.tour-lainnya>div>div>.row>div>div>a:hover{
  	color: rgb(79,123,168);
  }
 
-  .blog>div>div>form input{
+footer>div>div>div>form input{
  	font-size: 16px;
  }
-  .blog>div>div>form> input.btn{
+ footer>div>div>div>form input::placeholder{
+ 	opacity: .7!important;
+ }
+ footer>div>div>div>form> input.btn{
   	background-color: #336699;
   	font-size: 14px;
   }
 
  /*FOOTER*/
- footer>div>div>div>div a:not(i),footer>div>div.footer-copyright,footer>div>div.footer-copyright a,.blog>div>div>ul a{
+ footer>div>div>div>div a:not(i),footer>div>div.footer-copyright,footer>div>div.footer-copyright a,footer>div>div>div>ul a{
  	color: #8B8B8B;
  }
  footer>div>div.footer-copyright,footer>div>div.footer-copyright a{
