@@ -227,10 +227,12 @@ div.tour-lainnya>div>div>.row>div>div>a:hover{
   }
 
  /*FOOTER*/
- footer>div>div>div>div a,.blog>div>div>ul a{
+ footer>div>div>div>div a:not(i),footer>div>div.footer-copyright,footer>div>div.footer-copyright a,.blog>div>div>ul a{
  	color: #8B8B8B;
  }
-
+ footer>div>div.footer-copyright,footer>div>div.footer-copyright a{
+ 	font-size:14px;
+ }
 
 /*----------------------------------------------------------------------------POSTINGAN----------------------------------------------------------------------------*/
 
