@@ -27,3 +27,16 @@ $('html,body').animate({
 });
 
 // /NAVBAR 
+
+// FOOTER 
+
+  // tanggal copyright
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("tahun-sekarang").innerHTML=n;
+
+// /FOOTER
+
+
+
+// Postingan ===================================

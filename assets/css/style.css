@@ -239,27 +239,10 @@ footer>div>div>div>form input{
 
 /*----------------------------------------------------------------------------POSTINGAN----------------------------------------------------------------------------*/
 
-.item1 { grid-area: header; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
-	display: grid;
-	grid-template-areas:
-	'header header header header header header'
-	'main main main main right right'
-	'footer footer footer footer footer footer';
-	grid-gap: 10px;
-	background-color: #2196F3;
-	padding: 10px;
-}
-
-.grid-container > div {
-	background-color: rgba(255, 255, 255, 0.8);
-	text-align: center;
-	padding: 20px 0;
-	font-size: 30px;
+.widget-post>ul>a>img:hover{
+	filter: brightness(50%);
+	transition: .5s ease;
+	color: initial;
 }
 
 /*----------------------------------------------------------------------------/POSTINGAN----------------------------------------------------------------------------*/
@@ -374,7 +357,17 @@ footer>div>div>div>form input{
 		margin-top: 0!important;
 	}
 	/*/container*/
-	
+	/*Footer*/
+	footer>div>div.footer-copyright,footer>div>div.footer-copyright{
+		text-align: center;
+	}
+
+/*----------------------------------------------------------------------------POSTINGAN mobile----------------------------------------------------------------------------*/
+.widget-post,.row>.footer{
+	margin-top: 3em!important;
+}
+/*----------------------------------------------------------------------------/POSTINGAN mobile----------------------------------------------------------------------------*/
+
 }
 
 /*medium*/
