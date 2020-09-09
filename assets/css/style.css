@@ -1,3 +1,16 @@
+
+
+/*
+	// Theme Name: Egypt travel
+	// Theme URI: https://github.com/muhammadelanghardifal
+	// Description: HTML egypt travel versi-draft 6.0
+	// Author: Muhammad Elang Hardifal
+	// Author URI: https://muhammadelanghardifal.github.io/
+	// Version: 1.0
+
+*/
+
+
 /* CSS navbar */
 nav{
 	box-shadow: 0px .5px 5px darkgray;
@@ -243,6 +256,19 @@ footer>div>div>div>form input{
 	filter: brightness(50%);
 	transition: .5s ease;
 	color: initial;
+}
+div.postingan{
+	font-family: 'Poppins', sans-serif; 
+}
+div.postingan>div>.main{
+	line-height: 2rem;
+}
+div.postingan>div>div>h2{
+	font-weight: bold;
+}
+.widget-post>div>ul>a>img:hover{
+	filter: brightness(60%);
+	transition: .5s;
 }
 
 /*----------------------------------------------------------------------------/POSTINGAN----------------------------------------------------------------------------*/
