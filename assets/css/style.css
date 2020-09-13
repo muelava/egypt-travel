@@ -392,6 +392,9 @@ div.postingan>div>div>h2{
 .widget-post,.row>.footer{
 	margin-top: 3em!important;
 }
+.figure>div>.img-small{
+	display: none;
+}
 /*----------------------------------------------------------------------------/POSTINGAN mobile----------------------------------------------------------------------------*/
 
 }
@@ -436,4 +439,20 @@ div.postingan>div>div>h2{
 	.blog>div>div>div>a>div h6{
  	font-size: 0.5rem;
  }
+
+/*----------------------------------------------------------------------------POSTINGAN mobile extra small----------------------------------------------------------------------------*/
+figcaption>div>h5{
+	font-size: .8rem;
+}
+figcaption>div>p{
+	font-size: .6rem;
+}
+figcaption>div>h4{
+	font-size: .9rem;
+}
+figcaption>div>a.btn{
+	font-size: .7rem;
+}
+/*----------------------------------------------------------------------------/POSTINGAN mobile extra small----------------------------------------------------------------------------*/
+
 }
